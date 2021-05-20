@@ -1,0 +1,28 @@
+/target/
+
+#.idea
+.idea/workspace.xml
+.idea/*.*
+.idea
+/.idea/
+.metadata
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+#screenshots
+/src/main/screenshot
+FailedTestsScreenshots/
+
+#testresult
+src/test/testresult
+
+# other branch
+../CommanderN/
+
+#chormeDriver
+src/main/resources/chromedriver.exe
+#log file
+**/*.log
