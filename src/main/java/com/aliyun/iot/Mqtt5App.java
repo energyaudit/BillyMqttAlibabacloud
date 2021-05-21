@@ -45,7 +45,8 @@ public class Mqtt5App {
 
         //您可登录物联网平台控制台，在实例概览页，找到并单击对应实例，进入实例详情页，查看实例终端节点
 //        String broker = "ssl://" + "${企业版实例下接入域名}" + ":" + port;//ssl may change to tcp as your system designed to
-        String broker = "ssl://" + "iot.eclipse.org" + ":" + port;
+//        String broker = "ssl://" + "iot.eclipse.org" + ":" + port;
+        String broker = "tcp://" + "broker.emqx.io" + ":" + port;
 
 
         MemoryPersistence persistence = new MemoryPersistence();
