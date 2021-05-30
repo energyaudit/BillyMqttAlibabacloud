@@ -31,8 +31,12 @@ public class App
         System.out.println("clientid: " + sign.getClientid());
 
         //使用Paho连接阿里云物联网平台
-        String port = "443";
-        String broker = "ssl://" + productKey + ".iot-as-mqtt.cn-shanghai.aliyuncs.com" + ":" + port;
+//        String port = "443";
+        String port = "1883";
+
+//        String broker = "ssl://" + productKey + ".iot-as-mqtt.cn-shanghai.aliyuncs.com" + ":" + port;
+//        String broker = "tcp://broker.hivemq.com"+":" + port;
+        String broker = "tcp://broker.emqx.io:1883";
         MemoryPersistence persistence = new MemoryPersistence();
         try{
             //Paho Mqtt 客户端
